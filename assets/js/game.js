@@ -1,14 +1,37 @@
-function fight() {
-    window.alert("The fight has begun!");
+var enemyName = "Roborto";
+var enemyHealth = 10;
+var enemyAttack = 12;
+var playerAttack = 50
+var playerName = "Cool";
+
+var fight = function () {
+    window.alert("Welcome to Robot Gladiators!");
+};
+
+enemyHealth = enemyHealth - playerAttack
+console.log(playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
+);
+
+if (enemyHealth <= 0) {
+    window.alert(enemyName + " has died!");
+  } 
+  else {
+    window.alert(enemyName + " still has " + enemyHealth + " health left.");
   }
-fight ();
-var playerName = window.prompt("What is your robot's name?");
-var playerName = "Tony the Robot";
-//What is this?
-console.log(playerName);
-console.log("This logs a string, good for leaving yourself a message");
-// this will do math and log 20
-console.log(10 + 10);
-// what is this?
-console.log("Our robot's name is " + playerName);
-//fight();
+
+
+  var playerHealth = 100;
+if (playerHealth > 0) {
+    console.log("Your player is still alive!")
+}
+
+var playerHealth = 10;
+
+if (playerHealth === 0) {
+  console.log("This will not run.");
+} 
+else {
+  console.log("This will run instead.");
+}
+
+fight();
